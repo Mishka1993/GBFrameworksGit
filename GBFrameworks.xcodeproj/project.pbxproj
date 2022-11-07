@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5073A06829196E5400C6B2EA /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06729196E5400C6B2EA /* RealmService.swift */; };
+		5073A06A29196E7800C6B2EA /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06929196E7800C6B2EA /* RouteManager.swift */; };
+		5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */; };
+		5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */; };
 		50F49DF5290166E1008B36A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF4290166E1008B36A7 /* AppDelegate.swift */; };
 		50F49DF7290166E1008B36A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF6290166E1008B36A7 /* SceneDelegate.swift */; };
 		50F49DF9290166E1008B36A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF8290166E1008B36A7 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		01942E3FCB8A56DEBB989650 /* Pods-GBFrameworks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBFrameworks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks.debug.xcconfig"; sourceTree = "<group>"; };
 		45F4C5C6034346136CA8419F /* Pods-GBFrameworks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBFrameworks.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks.release.xcconfig"; sourceTree = "<group>"; };
+		5073A06729196E5400C6B2EA /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		5073A06929196E7800C6B2EA /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
+		5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRouteCoodinate.swift; sourceTree = "<group>"; };
 		50F49DF1290166E1008B36A7 /* GBFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F49DF4290166E1008B36A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F49DF6290166E1008B36A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +89,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5073A06429196DF200C6B2EA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50F49DF4290166E1008B36A7 /* AppDelegate.swift */,
+				50F49DF6290166E1008B36A7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5073A06529196E3C00C6B2EA /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				5073A06629196E4300C6B2EA /* Services */,
+				5073A06929196E7800C6B2EA /* RouteManager.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		5073A06629196E4300C6B2EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5073A06729196E5400C6B2EA /* RealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5073A06B29196E9D00C6B2EA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */,
+				5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5073A07129196EFA00C6B2EA /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				5073A07229196F0100C6B2EA /* Controllers */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		5073A07229196F0100C6B2EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50F49DF8290166E1008B36A7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		50F49DE8290166E1008B36A7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +165,10 @@
 		50F49DF3290166E1008B36A7 /* GBFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50F49DF4290166E1008B36A7 /* AppDelegate.swift */,
-				50F49DF6290166E1008B36A7 /* SceneDelegate.swift */,
-				50F49DF8290166E1008B36A7 /* ViewController.swift */,
+				5073A07129196EFA00C6B2EA /* Flows */,
+				5073A06B29196E9D00C6B2EA /* Entity */,
+				5073A06529196E3C00C6B2EA /* BusinessLogic */,
+				5073A06429196DF200C6B2EA /* App */,
 				50F49DFA290166E1008B36A7 /* Main.storyboard */,
 				50F49DFD290166E7008B36A7 /* Assets.xcassets */,
 				50F49DFF290166E7008B36A7 /* LaunchScreen.storyboard */,
@@ -287,17 +347,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7417CC3B56EAEC3273E148D /* [CP] Check Pods Manifest.lock */ = {
@@ -328,20 +386,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBFrameworks/Pods-GBFrameworks-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -351,9 +404,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */,
+				5073A06A29196E7800C6B2EA /* RouteManager.swift in Sources */,
 				50F49DF9290166E1008B36A7 /* ViewController.swift in Sources */,
 				50F49DF5290166E1008B36A7 /* AppDelegate.swift in Sources */,
 				50F49DF7290166E1008B36A7 /* SceneDelegate.swift in Sources */,
+				5073A06829196E5400C6B2EA /* RealmService.swift in Sources */,
+				5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

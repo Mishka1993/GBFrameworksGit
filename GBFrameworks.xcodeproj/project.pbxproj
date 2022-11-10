@@ -11,9 +11,19 @@
 		5073A06A29196E7800C6B2EA /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06929196E7800C6B2EA /* RouteManager.swift */; };
 		5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */; };
 		5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */; };
+		50DF6253291D3FA30057C1A8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6252291D3FA20057C1A8 /* UserManager.swift */; };
+		50DF6255291D3FF40057C1A8 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6254291D3FF40057C1A8 /* RealmUser.swift */; };
+		50DF6258291D40450057C1A8 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6257291D40450057C1A8 /* UserDefaults.swift */; };
+		50DF625B291D40760057C1A8 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF625A291D40760057C1A8 /* UITextField+Ext.swift */; };
+		50DF625E291D40CE0057C1A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF625D291D40CE0057C1A8 /* LoginViewController.swift */; };
+		50DF6260291D40ED0057C1A8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF625F291D40ED0057C1A8 /* RegistrationViewController.swift */; };
+		50DF6263291D41440057C1A8 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6262291D41440057C1A8 /* ApplicationCoordinator.swift */; };
+		50DF6265291D41600057C1A8 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6264291D41600057C1A8 /* AuthCoordinator.swift */; };
+		50DF6267291D41840057C1A8 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6266291D41840057C1A8 /* BaseCoordinator.swift */; };
+		50DF6269291D41A00057C1A8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6268291D41A00057C1A8 /* MainCoordinator.swift */; };
+		50DF626C291D41CC0057C1A8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF626B291D41CC0057C1A8 /* MapViewController.swift */; };
 		50F49DF5290166E1008B36A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF4290166E1008B36A7 /* AppDelegate.swift */; };
 		50F49DF7290166E1008B36A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF6290166E1008B36A7 /* SceneDelegate.swift */; };
-		50F49DF9290166E1008B36A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F49DF8290166E1008B36A7 /* ViewController.swift */; };
 		50F49DFC290166E1008B36A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F49DFA290166E1008B36A7 /* Main.storyboard */; };
 		50F49DFE290166E7008B36A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F49DFD290166E7008B36A7 /* Assets.xcassets */; };
 		50F49E01290166E7008B36A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F49DFF290166E7008B36A7 /* LaunchScreen.storyboard */; };
@@ -47,10 +57,20 @@
 		5073A06929196E7800C6B2EA /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
 		5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRouteCoodinate.swift; sourceTree = "<group>"; };
+		50DF6252291D3FA20057C1A8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		50DF6254291D3FF40057C1A8 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
+		50DF6257291D40450057C1A8 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		50DF625A291D40760057C1A8 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		50DF625D291D40CE0057C1A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		50DF625F291D40ED0057C1A8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		50DF6262291D41440057C1A8 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		50DF6264291D41600057C1A8 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		50DF6266291D41840057C1A8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		50DF6268291D41A00057C1A8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		50DF626B291D41CC0057C1A8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		50F49DF1290166E1008B36A7 /* GBFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F49DF4290166E1008B36A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F49DF6290166E1008B36A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50F49DF8290166E1008B36A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50F49DFB290166E1008B36A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50F49DFD290166E7008B36A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F49E00290166E7008B36A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +123,7 @@
 			children = (
 				5073A06629196E4300C6B2EA /* Services */,
 				5073A06929196E7800C6B2EA /* RouteManager.swift */,
+				50DF6252291D3FA20057C1A8 /* UserManager.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -120,6 +141,7 @@
 			children = (
 				5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */,
 				5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */,
+				50DF6254291D3FF40057C1A8 /* RealmUser.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -127,17 +149,55 @@
 		5073A07129196EFA00C6B2EA /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				5073A07229196F0100C6B2EA /* Controllers */,
+				50DF626A291D41C00057C1A8 /* Main */,
+				50DF6261291D41350057C1A8 /* Coordinator */,
+				50DF625C291D40A40057C1A8 /* Auth */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
 		};
-		5073A07229196F0100C6B2EA /* Controllers */ = {
+		50DF6256291D40250057C1A8 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				50F49DF8290166E1008B36A7 /* ViewController.swift */,
+				50DF6257291D40450057C1A8 /* UserDefaults.swift */,
 			);
-			path = Controllers;
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		50DF6259291D40610057C1A8 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				50DF625A291D40760057C1A8 /* UITextField+Ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		50DF625C291D40A40057C1A8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				50DF625D291D40CE0057C1A8 /* LoginViewController.swift */,
+				50DF625F291D40ED0057C1A8 /* RegistrationViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		50DF6261291D41350057C1A8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				50DF6262291D41440057C1A8 /* ApplicationCoordinator.swift */,
+				50DF6264291D41600057C1A8 /* AuthCoordinator.swift */,
+				50DF6266291D41840057C1A8 /* BaseCoordinator.swift */,
+				50DF6268291D41A00057C1A8 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		50DF626A291D41C00057C1A8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				50DF626B291D41CC0057C1A8 /* MapViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		50F49DE8290166E1008B36A7 = {
@@ -165,10 +225,12 @@
 		50F49DF3290166E1008B36A7 /* GBFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5073A07129196EFA00C6B2EA /* Flows */,
-				5073A06B29196E9D00C6B2EA /* Entity */,
-				5073A06529196E3C00C6B2EA /* BusinessLogic */,
 				5073A06429196DF200C6B2EA /* App */,
+				5073A06529196E3C00C6B2EA /* BusinessLogic */,
+				50DF6256291D40250057C1A8 /* Environments */,
+				5073A06B29196E9D00C6B2EA /* Entity */,
+				50DF6259291D40610057C1A8 /* Ext */,
+				5073A07129196EFA00C6B2EA /* Flows */,
 				50F49DFA290166E1008B36A7 /* Main.storyboard */,
 				50F49DFD290166E7008B36A7 /* Assets.xcassets */,
 				50F49DFF290166E7008B36A7 /* LaunchScreen.storyboard */,
@@ -404,13 +466,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DF625E291D40CE0057C1A8 /* LoginViewController.swift in Sources */,
 				5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */,
+				50DF6263291D41440057C1A8 /* ApplicationCoordinator.swift in Sources */,
 				5073A06A29196E7800C6B2EA /* RouteManager.swift in Sources */,
-				50F49DF9290166E1008B36A7 /* ViewController.swift in Sources */,
+				50DF6265291D41600057C1A8 /* AuthCoordinator.swift in Sources */,
+				50DF625B291D40760057C1A8 /* UITextField+Ext.swift in Sources */,
+				50DF6260291D40ED0057C1A8 /* RegistrationViewController.swift in Sources */,
 				50F49DF5290166E1008B36A7 /* AppDelegate.swift in Sources */,
 				50F49DF7290166E1008B36A7 /* SceneDelegate.swift in Sources */,
+				50DF6269291D41A00057C1A8 /* MainCoordinator.swift in Sources */,
+				50DF6255291D3FF40057C1A8 /* RealmUser.swift in Sources */,
+				50DF6267291D41840057C1A8 /* BaseCoordinator.swift in Sources */,
+				50DF6258291D40450057C1A8 /* UserDefaults.swift in Sources */,
 				5073A06829196E5400C6B2EA /* RealmService.swift in Sources */,
+				50DF6253291D3FA30057C1A8 /* UserManager.swift in Sources */,
 				5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */,
+				50DF626C291D41CC0057C1A8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

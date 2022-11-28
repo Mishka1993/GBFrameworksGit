@@ -11,6 +11,7 @@
 		5073A06A29196E7800C6B2EA /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06929196E7800C6B2EA /* RouteManager.swift */; };
 		5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */; };
 		5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */; };
+		508AB3802934FD8000CE4930 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508AB37F2934FD8000CE4930 /* AppConfiguration.swift */; };
 		50DF6253291D3FA30057C1A8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6252291D3FA20057C1A8 /* UserManager.swift */; };
 		50DF6255291D3FF40057C1A8 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6254291D3FF40057C1A8 /* RealmUser.swift */; };
 		50DF6258291D40450057C1A8 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6257291D40450057C1A8 /* UserDefaults.swift */; };
@@ -57,6 +58,7 @@
 		5073A06929196E7800C6B2EA /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
 		5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRouteCoodinate.swift; sourceTree = "<group>"; };
+		508AB37F2934FD8000CE4930 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		50DF6252291D3FA20057C1A8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		50DF6254291D3FF40057C1A8 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		50DF6257291D40450057C1A8 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				50DF6257291D40450057C1A8 /* UserDefaults.swift */,
+				508AB37F2934FD8000CE4930 /* AppConfiguration.swift */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508AB3802934FD8000CE4930 /* AppConfiguration.swift in Sources */,
 				50DF625E291D40CE0057C1A8 /* LoginViewController.swift in Sources */,
 				5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */,
 				50DF6263291D41440057C1A8 /* ApplicationCoordinator.swift in Sources */,

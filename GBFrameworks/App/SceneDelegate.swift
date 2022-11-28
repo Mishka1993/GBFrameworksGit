@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     var coordinator: ApplicationCoordinator?
-
+    let visualBlureEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -33,11 +33,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        removeBlure()
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
+        addBlure()
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -51,6 +53,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    private func addBlure() {
+            guard let window = window else { return }
+            visualBlureEffectView.frame = window.bounds
+            window.rootViewController?.view.addSubview(visualBlureEffectView)
+        }
 
+        private func removeBlure() {
+            visualBlureEffectView.removeFromSuperview()
+        }
 }
 

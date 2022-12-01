@@ -23,5 +23,7 @@
 	</dict>
 	<key>GMS_API_KEY</key>
 	<string>$(GMS_API_KEY)</string>
+	<key>SuppressBuildableAutocreation</key>
+	<string>973E78F0282F022E0093CA78</string>
 </dict>
 </plist>

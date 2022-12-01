@@ -12,6 +12,17 @@
 		5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */; };
 		5073A07029196ECE00C6B2EA /* RealmRouteCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */; };
 		508AB3802934FD8000CE4930 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508AB37F2934FD8000CE4930 /* AppConfiguration.swift */; };
+		508AB3832938CEA300CE4930 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3822938CEA300CE4930 /* RxBlocking */; };
+		508AB3852938CEA300CE4930 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3842938CEA300CE4930 /* RxBlocking-Dynamic */; };
+		508AB3872938CEA300CE4930 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3862938CEA300CE4930 /* RxCocoa */; };
+		508AB3892938CEA300CE4930 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3882938CEA300CE4930 /* RxCocoa-Dynamic */; };
+		508AB38B2938CEA300CE4930 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB38A2938CEA300CE4930 /* RxRelay */; };
+		508AB38D2938CEA300CE4930 /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB38C2938CEA300CE4930 /* RxRelay-Dynamic */; };
+		508AB38F2938CEA300CE4930 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB38E2938CEA300CE4930 /* RxSwift */; };
+		508AB3912938CEA300CE4930 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3902938CEA300CE4930 /* RxSwift-Dynamic */; };
+		508AB3932938CEA300CE4930 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3922938CEA300CE4930 /* RxTest */; };
+		508AB3952938CEA300CE4930 /* RxTest-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 508AB3942938CEA300CE4930 /* RxTest-Dynamic */; };
+		508AB3972938CFCD00CE4930 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508AB3962938CFCD00CE4930 /* LocationManager.swift */; };
 		50DF6253291D3FA30057C1A8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6252291D3FA20057C1A8 /* UserManager.swift */; };
 		50DF6255291D3FF40057C1A8 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6254291D3FF40057C1A8 /* RealmUser.swift */; };
 		50DF6258291D40450057C1A8 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF6257291D40450057C1A8 /* UserDefaults.swift */; };
@@ -59,6 +70,7 @@
 		5073A06D29196EB400C6B2EA /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
 		5073A06F29196ECE00C6B2EA /* RealmRouteCoodinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRouteCoodinate.swift; sourceTree = "<group>"; };
 		508AB37F2934FD8000CE4930 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		508AB3962938CFCD00CE4930 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		50DF6252291D3FA20057C1A8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		50DF6254291D3FF40057C1A8 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		50DF6257291D40450057C1A8 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -90,7 +102,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508AB3932938CEA300CE4930 /* RxTest in Frameworks */,
+				508AB38B2938CEA300CE4930 /* RxRelay in Frameworks */,
+				508AB3912938CEA300CE4930 /* RxSwift-Dynamic in Frameworks */,
+				508AB3852938CEA300CE4930 /* RxBlocking-Dynamic in Frameworks */,
+				508AB3892938CEA300CE4930 /* RxCocoa-Dynamic in Frameworks */,
 				5C38E9987DFF07E8F049E9C4 /* Pods_GBFrameworks.framework in Frameworks */,
+				508AB3872938CEA300CE4930 /* RxCocoa in Frameworks */,
+				508AB38D2938CEA300CE4930 /* RxRelay-Dynamic in Frameworks */,
+				508AB38F2938CEA300CE4930 /* RxSwift in Frameworks */,
+				508AB3952938CEA300CE4930 /* RxTest-Dynamic in Frameworks */,
+				508AB3832938CEA300CE4930 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +148,7 @@
 				5073A06629196E4300C6B2EA /* Services */,
 				5073A06929196E7800C6B2EA /* RouteManager.swift */,
 				50DF6252291D3FA20057C1A8 /* UserManager.swift */,
+				508AB3962938CFCD00CE4930 /* LocationManager.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -295,6 +318,18 @@
 			dependencies = (
 			);
 			name = GBFrameworks;
+			packageProductDependencies = (
+				508AB3822938CEA300CE4930 /* RxBlocking */,
+				508AB3842938CEA300CE4930 /* RxBlocking-Dynamic */,
+				508AB3862938CEA300CE4930 /* RxCocoa */,
+				508AB3882938CEA300CE4930 /* RxCocoa-Dynamic */,
+				508AB38A2938CEA300CE4930 /* RxRelay */,
+				508AB38C2938CEA300CE4930 /* RxRelay-Dynamic */,
+				508AB38E2938CEA300CE4930 /* RxSwift */,
+				508AB3902938CEA300CE4930 /* RxSwift-Dynamic */,
+				508AB3922938CEA300CE4930 /* RxTest */,
+				508AB3942938CEA300CE4930 /* RxTest-Dynamic */,
+			);
 			productName = GBFrameworks;
 			productReference = 50F49DF1290166E1008B36A7 /* GBFrameworks.app */;
 			productType = "com.apple.product-type.application";
@@ -367,6 +402,9 @@
 				Base,
 			);
 			mainGroup = 50F49DE8290166E1008B36A7;
+			packageReferences = (
+				508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 50F49DF2290166E1008B36A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -486,6 +524,7 @@
 				5073A06829196E5400C6B2EA /* RealmService.swift in Sources */,
 				50DF6253291D3FA30057C1A8 /* UserManager.swift in Sources */,
 				5073A06E29196EB400C6B2EA /* PrivateServiceKey.swift in Sources */,
+				508AB3972938CFCD00CE4930 /* LocationManager.swift in Sources */,
 				50DF626C291D41CC0057C1A8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,6 +869,70 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		508AB3822938CEA300CE4930 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		508AB3842938CEA300CE4930 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		508AB3862938CEA300CE4930 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		508AB3882938CEA300CE4930 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		508AB38A2938CEA300CE4930 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		508AB38C2938CEA300CE4930 /* RxRelay-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxRelay-Dynamic";
+		};
+		508AB38E2938CEA300CE4930 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		508AB3902938CEA300CE4930 /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+		508AB3922938CEA300CE4930 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		508AB3942938CEA300CE4930 /* RxTest-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 508AB3812938CEA200CE4930 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxTest-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50F49DE9290166E1008B36A7 /* Project object */;
 }

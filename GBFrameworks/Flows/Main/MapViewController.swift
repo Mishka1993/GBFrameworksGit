@@ -15,7 +15,7 @@ class MapViewController: UIViewController {
     let coordinate = CLLocationCoordinate2D(latitude: 55.753215, longitude: 37.622504)
 
     var zoom: Float = 17.0
-    var locationManager: CLLocationManager?
+    let locationManager  = LocationManager.instance
     var route: GMSPolyline?
     var routePath: GMSMutablePath?
     var routeManager: RouteManagerProtocol?
@@ -31,16 +31,16 @@ class MapViewController: UIViewController {
     }
 
     @IBAction func startRoute(_: Any) {
-        locationManager?.requestLocation()
+        locationManager.requestLocation()
 
         routeInit()
 
-        locationManager?.startUpdatingLocation()
+        locationManager.startUpdatingLocation()
         routeManager?.start()
     }
 
     @IBAction func endRoute(_: Any) {
-        locationManager?.stopUpdatingLocation()
+        locationManager.stopUpdatingLocation()
         routeManager?.stop()
     }
 
@@ -99,13 +99,20 @@ class MapViewController: UIViewController {
     }
 
     private func configureLocationManager() {
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.allowsBackgroundLocationUpdates = true
-        locationManager?.pausesLocationUpdatesAutomatically = false
-        locationManager?.startMonitoringSignificantLocationChanges()
-        locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager?.requestWhenInUseAuthorization()
+        locationManager
+                     .location
+                     .asObservable()
+                     .bind { [weak self] location in
+                         guard let location = location else { return }
+
+                         self?.routePath?.add(location.coordinate)
+                         self?.route?.path = self?.routePath
+
+                         let position = GMSCameraPosition.camera(withTarget: location.coordinate, zoom: self?.zoom ?? 17)
+                         self?.mapView.animate(to: position)
+
+                         self?.routeManager?.track(coodinate: location.coordinate)
+                     }
     }
 
     private func coufigureRouteManager() {
